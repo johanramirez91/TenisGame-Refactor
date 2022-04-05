@@ -32,12 +32,10 @@ public class TennisGame3 implements TennisGame {
         return Math.pow((scorePlayer2 - scorePlayer1), 2) == 1;
     }
 
-
     private String scoreResults() {
         String[] scores = new String[]{"Love", "Fifteen", "Thirty", "Forty"};
         return isEqualsScore() ? scores[scorePlayer1] + "-All" : scores[scorePlayer1] + "-" + scores[scorePlayer2];
     }
-
 
     private boolean isDifferentToSix() {
         return (scorePlayer1 + scorePlayer2 != 6);
